@@ -1,9 +1,15 @@
-.navbar.brand {
-  flex: end;
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
 .nav-item.nav-link {
   padding: 10px;
+}
+
+.navbar.navbar-light {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 body {
@@ -18,12 +24,17 @@ body {
 
 .card-title {
   justify-content: center;
-  padding: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-family: 'Playfair Display', serif;
 }
 
 .card-img-top {
   padding: 15px;
   max-width: 450px;
+  border-width: 2px;
+  border-top: 2px;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 640px) {
