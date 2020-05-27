@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(218, 213, 213);
+  }
+
+.wrapper{
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+}  
+
+.card-title{
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-img-top{
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+ .wrapper {
+      /* Box-model */
+      width: 100%;
+      padding-top: 20px;
+    }
+}
