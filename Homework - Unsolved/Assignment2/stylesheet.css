@@ -1,5 +1,5 @@
 .navbar-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -18,7 +18,7 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   padding: 15px;
 }
 
@@ -30,13 +30,34 @@ body {
   justify-content: center;
   padding-top: 15px;
   padding-left: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
+}
+
+.card-body {
+  
+}
+
+.card.bg-dark.text-white {
+  max-width: 250px;
+  margin-top: 15px;
+}
+
+.card-img-overlay {
+  margin-top: 125px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.card-image-title {
+  font-family: "Playfair Display", serif;
+  align-items: flex-end;
+  text-align: center;
 }
 
 .card-img-top {
   padding: 15px;
   padding-top: 5px;
-  max-width: 350px;
+  max-width: 250px;
   border-width: 2px;
   border-top: 2px;
   border-radius: 15px;
@@ -45,7 +66,6 @@ body {
 
 .contactform {
   padding: 15px;
-  text-decoration-color: gray;
 }
 
 @media screen and (max-width: 640px) {
