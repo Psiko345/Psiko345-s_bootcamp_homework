@@ -13,21 +13,14 @@ function writePassword() {
 
 generateBtn.addEventListener('click', writePassword);
 
-// when generate button is clicked, follow prompts
-// when prompts followed, generate password 
-// length of password
-// am i allowed special characters? IF YES, access array / IF NO, skip array
-// am i allowed numbers? IF YES, access array / IF NO, skip array
-// am i allowed uppercase? IF YES, access array / IF NO, skip array
-// am i allowed lowercase? IF YES, access array / IF NO, skip array
-
 //Prompt: Password length (8-128 Characters)
 //1. prompt user for max length, 
 //2. set min length to 8
 //3. save length of password in characters
+//4. ensure user can only enter numbers / re-run prompt if any letters are entered
 
-let passwordLength =
-  prompt("How many characters long do you want your password? (8 - 128)")
+let passwordLength = prompt("How many characters long do you want your password? (8 - 128)")
+  
 
 
 //Prompt: Special Characters?
@@ -69,7 +62,11 @@ let lowerCaseletters = ["abcdefghijklmnopqrstuvwxyz"]
 // uppercase array
 // lowercase array
 
-function complexity(specialCharacters, allNumbers, upperCaseletters, lowerCaseletters) {
+function getRandomCharset(allowedArrays) {
+  return Math.floor(Math.random()* allowedArrays)
+}
+
+function allowedArrays(specialCharacters, allNumbers, upperCaseletters, lowerCaseletters) {
 
   if (specialCharacters === true) {
     return "allowed"
@@ -97,6 +94,17 @@ function complexity(specialCharacters, allNumbers, upperCaseletters, lowerCasele
 }
 
 //Generate password
+// when generate button is clicked, follow prompts
+// when prompts followed, generate password 
+// look at allowed length of password
+// look at allowedArrays
+// am i allowed special characters? IF YES, access array / IF NO, skip array
+// am i allowed numbers? IF YES, access array / IF NO, skip array
+// am i allowed uppercase? IF YES, access array / IF NO, skip array
+// am i allowed lowercase? IF YES, access array / IF NO, skip array
+// given "passwordLength", run through "allowedArrays" for each character, choosing randomly
+// disply resulting password
+
 
 for (let i = 0; i <= passwordLength; i++) {
   password = password + 
